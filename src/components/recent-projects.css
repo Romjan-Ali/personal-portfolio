@@ -1,0 +1,56 @@
+.recent-works {
+    margin-top: 100px;
+    background-color: white;
+    padding: 20px;
+}
+
+.recent-works .h {
+    color: var(--background-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recent {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--background-color);
+}
+
+.recent h3 {
+    display: block;
+    text-align: center;
+}
+
+.recent img {
+    width: 100%;
+}
+
+.download-my-cv a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+.download-my-cv a small {
+    font-size: 10px;
+    bottom: 0;
+}
+
+.download-my-cv a i {
+    margin-right: 8px;
+}
+
+.download-my-cv {
+    margin-top: 100px;
+    background-color: white;
+    box-shadow: 2px 2px 4px 0 rgba(161,181,255,0.8), -2px -2px 4px 0 rgba(161,181,255, 0.8);
+    padding: 40px;
+    transition: box-shadow 0.2s;
+}
+
+.download-my-cv:hover {
+    box-shadow: 3px 3px 6px 0 rgba(161,181,255,0.8), -3px -3px 6px 0 rgba(161,181,255, 0.8);
+}

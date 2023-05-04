@@ -1,0 +1,79 @@
+.contact-form {
+    margin-top: 100px;
+    width: 96%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-me {
+    font-size: 40px;
+}
+
+img.icon {
+    width: 16px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.tel a, .email a, .facebook a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.form {
+    margin-top: 100px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    background-color: rgba(161, 181, 255, 0.267);
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+}
+
+form input {
+    height: 40px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    font-style: italic;
+    color: var(--text-color);
+}
+
+form input:focus, form textarea:focus {
+    border: 2px solid #A1B5FF;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+form input[type="submit"]:hover {
+    border: 2px solid #A1B5FF;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 800px){
+    .contact-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+    }
+
+    .contact {
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 50%;
+    }
+
+    .form {
+        margin-right: 5%;
+        width: 50%;
+    }
+}

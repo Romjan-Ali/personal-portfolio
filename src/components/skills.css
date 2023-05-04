@@ -1,0 +1,16 @@
+.skills img {
+    max-height: 40vh;
+    max-width: 40vw;
+    padding: 20px;
+}
+
+.skills {
+    display: flex;
+    background-color: white;
+    margin-top: 100px;
+    box-shadow: 0 6px 10px 0 var(--text-color);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 5px;
+}
