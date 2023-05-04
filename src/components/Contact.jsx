@@ -12,10 +12,19 @@ const Contact = () => {
         emailjs.sendForm('service_lc229h7', 'template_k2hk3g9', form.current, 'rf1X9lN_rxHgD2iav')
         .then((result) => {
             if(result.status === 200){
-                alert("Your message has been successfully delivered!")
+                const userName = document.querySelector("#name");
+                const userEmail = document.querySelector("#email");
+                const userMessage = document.querySelector("#message");
+
+                alert(`Your message has been successfully delivered! \n\nName: ${userName.value} \nEmail: ${userEmail.value} \nMessage: ${userMessage.value}`);
+
+                userName.value = "";
+                userEmail.value = "";
+                userMessage.value = "";
             }
             console.log(result);
         }, (error) => {
+            alert(`The message failed to send \n ${error.text}`);
             console.log(error.text);
         });
     };
