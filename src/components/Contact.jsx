@@ -39,7 +39,7 @@ const Contact = () => {
                 </div>
                 <div className='tel'>
                     <a href='tel: +8801402857913'>
-                        <i className='fas fa-phone-square-alt'></i>
+                        <i className='material-icons'>call</i>
                         +8801402857913
                     </a>
                 </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div className='facebook'>
                     <a href='https://www.facebook.com/profile.php?id=100010602070882'>
-                        <i className='fab fa-facebook-square'></i>
+                        <i className='material-icons'>facebook</i>
                         romjan001
                     </a>
                 </div>
