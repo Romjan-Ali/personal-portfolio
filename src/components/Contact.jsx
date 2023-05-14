@@ -24,7 +24,7 @@ const Contact = () => {
             }
             console.log(result);
         }, (error) => {
-            alert(`The message failed to send \n ${error.text}`);
+            alert(`The message is failed to send. Please check your internet connection.`);
             console.log(error.text);
         });
     };
@@ -39,19 +39,19 @@ const Contact = () => {
                 </div>
                 <div className='tel'>
                     <a href='tel: +8801402857913'>
-                        <img className='icon' src={require('../img/call.png')} alt='Call: ' />
+                        <i className='fas fa-phone-square-alt'>Call:</i>
                         +8801402857913
                     </a>
                 </div>
                 <div className='email'>
                     <a href='mailto: 000romjanali@gmail.com'>
-                        <img className='icon' src={require('../img/email.png')} alt='Email: ' />
+                        <i className="material-icons">Email:</i>
                         000romjanali@gmail.com
                     </a>
                 </div>
                 <div className='facebook'>
                     <a href='https://www.facebook.com/profile.php?id=100010602070882'>
-                        <img className='icon' src={require('../img/facebook.png')} alt='Facebook: ' />
+                        <i className='fab fa-facebook-square'>Facebook:</i>
                         romjan001
                     </a>
                 </div>

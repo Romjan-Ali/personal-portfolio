@@ -1,8 +1,11 @@
 /* box */
 
 .box {
+    margin-top: 0px;
+    display: inline-block;
+    width: 100%;
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
     border: 4px;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -61,7 +64,6 @@ img.romjan-ali {
         float: none;
         width: 150px;
         height: auto;
-        top: 0;
         margin-top: 20px;
     }
 
@@ -74,7 +76,7 @@ img.romjan-ali {
     }
 
     .active {
-        font-size: lerger;
+        font-size: larger;
         display: block;
         letter-spacing: 0.3px;
         line-height: 20px;
@@ -83,17 +85,26 @@ img.romjan-ali {
 
     .box {
         width: 200px;
-        margin-left: 20px;
+        margin-left: 8%;
+        margin-top: 150px;
         display: inline-block;
-        position: absolute;
-        top: 0;
+        /*position: absolute;
+        top: 100px;*/
     }
 
     .links-container {
-        display: inline-block;
+        display: block;
         position: absolute;
-        top: 0;
-        right: 0;
+        width: 60%;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .links-container .links {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     br {
@@ -103,10 +114,12 @@ img.romjan-ali {
     .myself {
         display: inline-block;
         width: 50%;
-        position: relative;
-        top: 180px;
-        left: 35%;
-        margin-bottom: 150px;
+        
+        overflow: auto;
+        margin-left: 15%;
+        /*
+        left: 35%;*/
+        margin-bottom: 10px;
     }
 
     .go-contact {

@@ -1,14 +1,24 @@
 .skills img {
-    max-height: 40vh;
-    max-width: 40vw;
+    max-height: 30vh; /* for desktop */
+    max-width: 30vw; /* for mobile */
     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skills .img {
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 }
 
 .skills {
     display: flex;
     background-color: white;
-    margin-top: 100px;
-    box-shadow: 0 6px 10px 0 var(--text-color);
+    margin-top: 120px;
+    box-shadow: 0 4px 6px 0px #a1b5ffcc;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;

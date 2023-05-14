@@ -1,6 +1,6 @@
 .recent-works {
     margin-top: 100px;
-    background-color: white;
+    background-color: #ffffffe8;
     padding: 20px;
 }
 
@@ -12,18 +12,54 @@
 
 .recent {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
     color: var(--background-color);
+    margin-bottom: 24px;
+    border: 2px dotted var(--background-color);
+    padding: 16px;
+    display: flex;
+    justify-content: baseline;
 }
 
 .recent h3 {
     display: block;
-    text-align: center;
 }
 
 .recent img {
     width: 100%;
+    box-shadow: 0 2px 4px 2px rgba(161,181,255, 0.8);
+    transition: 0.3s;
+}
+
+.recent img:hover {
+    box-shadow: 0 4px 6px 3px rgba(161,181,255, 0.8);
+}
+
+.project-details {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.project-details ul {
+    margin-top: 0;
+}
+
+.project-details ul li {
+    line-height: 1.8;
+}
+
+.project-details h4 {
+    margin-bottom: 8px;
+}
+
+.project-photo {
+    float: left;
+    width: 50%;
 }
 
 .download-my-cv a {
@@ -53,4 +89,21 @@
 
 .download-my-cv:hover {
     box-shadow: 3px 3px 6px 0 rgba(161,181,255,0.8), -3px -3px 6px 0 rgba(161,181,255, 0.8);
+}
+
+@media screen and (max-width: 800px) {
+    .recent-works {
+        display: block;
+        float: none;
+    }
+    .recent, .recent .project-details, .recent .project-photo {
+        display: block;
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .project-details h3 {
+        margin-top: 8px;
+    }
 }
